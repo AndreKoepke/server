@@ -23,7 +23,7 @@
  * password will be able to login to the admin panel.
  */
 global $admin_password;
-$admin_password = "CHANGEME!!!";
+$admin_password = "youNothingMeAdmin";
 
 
 /**
@@ -41,10 +41,10 @@ $encryption_key =  "0011223344556677";
  * - Edit mysql_host, _db, _user and _pw to match your MySQL-Setup
  *
  */
-$mysql_host = "localhost";  // Host Address
+$mysql_host = "mysql";  // Host Address
 $mysql_db   = "sturesy";    // Databasename
-$mysql_user = "username";   // MySQL-Username
-$mysql_pw   = "password";   // Password for Username
+$mysql_user = "root";   // MySQL-Username
+$mysql_pw   = $_ENV["MYSQL_ROOT_PASS"];   // Password for Username
 global $connection;
 
 
